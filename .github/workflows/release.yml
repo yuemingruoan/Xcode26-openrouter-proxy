@@ -1,20 +1,46 @@
-name: Release to npmjs.com
+name: CI
 
 on:
   release:
-    types: [prereleased]
+    types: [published]
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          registry-url: https://registry.npmjs.org/
-      - run: npm install
-      - run: npm run build
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        registry-url: 'https://registry.npmjs.org/'
+
+    - name: Install pnpm
+      run: npm install -g pnpm
+    - name: Get the release tag
+      id: get_tag
+      run: |
+        TAG_NAME=${GITHUB_REF##*/}
+        echo "RELEASE_TAG=$TAG_NAME" >> $GITHUB_ENV
+
+    - name: Update package.json version with release tag
+      run: |
+        sed -i "s/0.0.0/${{ env.RELEASE_TAG }}/g" package.json
+        cat package.json
+    - run: cat package.json
+
+    - name: Install dependencies
+      run: pnpm install
+
+
+
+    - name: Build main package
+      run: pnpm run build
+    - name: Publish to npm
+      run: pnpm publish . --no-git-checks
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
