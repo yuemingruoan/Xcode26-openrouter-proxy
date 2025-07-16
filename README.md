@@ -1,3 +1,6 @@
+# Xcode26-openrouter-proxy
+English | [中文](README-zh-cn.md)
+
 ## Overview
 
 Apple has updated the AI features in Xcode 26, allowing calls to local or third-party AI services. However, OpenRouter does not seem to use the standard OpenAI API, which prevents Xcode from directly integrating with OpenRouter. This project provides a middleware layer that converts OpenRouter's API into a format supported by Xcode. This project is adapted from [https://github.com/Kirow/OpenRouterXcodeProxy.git](https://github.com/Kirow/OpenRouterXcodeProxy.git), but the original project is currently not functioning properly.
