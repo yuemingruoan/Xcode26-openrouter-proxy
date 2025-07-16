@@ -1,0 +1,17 @@
+
+services:
+  openrouter-proxy:
+    build: ./proxy
+    ports:
+      # Map host port to container port
+      - "${HOST_PORT:-8080}:8080"  
+    volumes:
+      # Mount filter models file
+      - ./filter-models.txt:/app/filter-models.txt  
+    environment:
+      # Container port is fixed at 8080
+      PORT: 8080  
+      # Set to 'true' to bypass SSL verification (e.g., for Proxyman)
+      DISABLE_SSL_VERIFY: "${DISABLE_SSL_VERIFY:-false}"  
+      # Default to mounted file path
+      MODEL_FILTER_FILE: "${MODEL_FILTER_FILE:-/app/filter-models.txt}"  
