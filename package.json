@@ -1,5 +1,6 @@
 {
   "name": "@shiyu/xcode26-openrouter-proxy",
+  "description": "Translate Openrouter API to standard OpenAPI ,so you can connect openrouter to Xcode ",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
