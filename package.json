@@ -1,5 +1,5 @@
 {
-  "name": "xcode26-openrouter-proxy",
+  "name": "@shiyu/xcode26-openrouter-proxy",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
