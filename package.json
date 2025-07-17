@@ -1,7 +1,7 @@
 {
   "name": "@yuemingruoan/xcode26-openrouter-proxy",
   "description": "",
-  "version": "1.0.5",
+  "version": "0.0.0",
   "main": "index.js",
   "bin": {
     "opentransapi": "dist/src/app.js"
@@ -9,16 +9,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node src/app.ts",
-    "build": "tsc && echo '#!/usr/bin/env node' | cat - dist/src/app.js > dist/temp.js && mv dist/temp.js dist/app.js && chmod +x dist/app.js",
+    "build": "tsc",
     "opentransapi": "ts-node src/app.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuemingruoan/Xcode26-openrouter-proxy.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "yuemingruoan",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/yuemingruoan/Xcode26-openrouter-proxy/issues"
@@ -33,5 +32,8 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
