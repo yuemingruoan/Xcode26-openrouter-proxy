@@ -11,7 +11,7 @@
 ## 安装
 
 ```sh
-npm install -g @yuemingruoan/xocode26-openrouter-proxy
+npm install -g @yuemingruoan/xcode26-openrouter-proxy
 ```
 
 ### 启动
