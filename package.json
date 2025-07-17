@@ -1,11 +1,10 @@
 {
-  "name": "@shiyu/xcode26-openrouter-proxy",
-  "description": "Translate Openrouter API to standard OpenAPI ,so you can connect openrouter to Xcode ",
-  "version": "1.0.0",
+  "name": "@yuemingruoan/xcode26-openrouter-proxy",
   "description": "",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": {
-    "opentransapi": "./dist/app.js"
+    "opentransapi": "dist/src/app.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,16 +14,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dongguacute/Xcode26-openrouter-proxy.git"
+    "url": "git+https://github.com/yuemingruoan/Xcode26-openrouter-proxy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/dongguacute/Xcode26-openrouter-proxy/issues"
+    "url": "https://github.com/yuemingruoan/Xcode26-openrouter-proxy/issues"
   },
-  "homepage": "https://github.com/dongguacute/Xcode26-openrouter-proxy#readme",
+  "homepage": "https://github.com/yuemingruoan/Xcode26-openrouter-proxy#readme",
   "dependencies": {
     "@types/node": "^24.0.14",
     "axios": "^1.10.0",
