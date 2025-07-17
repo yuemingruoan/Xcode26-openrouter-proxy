@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import express, { Request, Response, NextFunction } from 'express';
 import axios from 'axios';
 import * as os from 'os';
