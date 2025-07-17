@@ -8,6 +8,12 @@
 
 ## 使用
 
+## 安装
+
+```sh
+npm install -g @yuemingruoan/xocode26-openrouter-proxy
+```
+
 ### 启动
 
 ```sh
