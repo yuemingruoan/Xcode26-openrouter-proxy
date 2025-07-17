@@ -8,15 +8,10 @@
 
 ## 使用
 
-### 安裝
-```sh
-npm install -g @yuemingruoan/xcode26-openrouter-proxy
-```
-
 ### 启动
 
 ```sh
-opentransapi
+npm run opentransapi
 ```
 
 ## Q&A
