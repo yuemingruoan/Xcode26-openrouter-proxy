@@ -6,6 +6,8 @@ import * as os from 'os';
 const app = express();
 const OPENROUTER_API_URL = "https://openrouter.ai";
 
+app.use(express.json());
+
 function logRequest(url: string, headers: any, method: string, body?: any) {
     console.log(`\n--- Sending ${method} request to ${url} ---`);
     console.log("Headers:");
