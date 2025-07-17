@@ -7,16 +7,10 @@ Apple has updated the AI features in Xcode 26, allowing calls to local or third-
 
 ## Usage
 
-### Install
-
-```sh
-npm install -g @yuemingruoan/xcode26-openrouter-proxy
-```
-
 ### Start
 
 ```sh
-opentransapi
+npm run opentransapi
 ```
 
 ## Q&A
