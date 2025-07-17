@@ -1,7 +1,7 @@
 {
   "name": "@yuemingruoan/xcode26-openrouter-proxy",
   "description": "",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "bin": {
     "opentransapi": "dist/src/app.js"
