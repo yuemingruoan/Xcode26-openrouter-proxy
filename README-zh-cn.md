@@ -10,7 +10,7 @@
 
 ### 安裝
 ```sh
-npm install -g @shiyu/xcode26-openrouter-proxy
+npm install -g @yuemingruoan/xcode26-openrouter-proxy
 ```
 
 ### 启动
