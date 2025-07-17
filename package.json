@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node src/app.ts",
-    "build": "tsc",
+    "build": "tsc && sed -i '' '1i\\#!/usr/bin/env node' dist/app.js && chmod +x dist/src/app.js",
     "opentransapi": "ts-node src/app.ts"
   },
   "repository": {
