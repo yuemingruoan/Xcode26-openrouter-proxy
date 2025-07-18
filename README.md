@@ -15,6 +15,7 @@ npm install -g @yuemingruoan/xcode26-openrouter-proxy
 ### Start
 
 ```sh
+export OPENROUTER_API_KEY="YOUR_API_KEY"
 opentransapi
 ```
 
